@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YTM Discord Presence",
+  "version": "1.0.0",
+  "description": "Shows the song playing on YouTube Music in your Discord profile. Only runs on music.youtube.com and only talks to a local script on your own computer.",
+  "permissions": [],
+  "host_permissions": ["http://127.0.0.1:3535/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

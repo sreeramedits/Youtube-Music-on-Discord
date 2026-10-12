@@ -1,0 +1,14 @@
+{
+  "name": "ytm-discord-presence",
+  "version": "1.0.0",
+  "description": "Show what you're playing on YouTube Music (web) as a Spotify-style \"Listening to\" status on Discord. Tiny browser extension + zero-dependency Node script.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["discord", "rich-presence", "youtube-music", "chrome-extension", "now-playing"],
+  "license": "MIT"
+}
